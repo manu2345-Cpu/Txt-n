@@ -221,10 +221,14 @@ async def txt_handler(bot: Client, m: Message):
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
+    # Default credit message
+    credit = "️@Nikhil_saini_khe 🕊️⁪⁬⁮⁮⁮"
     if raw_text3 == '1':
-        CR = credit
+        CR = '@Nikhil_saini_khe 🕊️'
+    elif raw_text3:
+        CR = raw_text3
     else:
-        CR = 🅝🅘🅚🅗🅘🅛 🅢🅐🅘🅝🅘
+        CR = credit
         
     await editable.edit("**Enter Your PW Token For 𝐌𝐏𝐃 𝐔𝐑𝐋  or send '0' for use default**")
     input4: Message = await bot.listen(editable.chat.id)
