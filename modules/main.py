@@ -103,7 +103,7 @@ async def main():
         
 class Data:
     START = (
-        "🌟 Welcome {0}! 🌟\n\n"
+        "🤡 आ ग‌‌ए बेटीचोध {0}! 🤡\n\n"
     )
 # Define the start command handler
 @bot.on_message(filters.command("start"))
@@ -132,7 +132,7 @@ async def start(client: Client, msg: Message):
     await asyncio.sleep(1)
     await start_message.edit_text(
         Data.START.format(msg.from_user.mention) +
-        "This may take a moment, sit back and relax! 😊\n\n"
+        "भोसडी चालू  हो रही है । 😊\n\n"
         "Progress: [🟧🟧🟧🟧🟧⬜⬜⬜⬜] 50%\n\n"
     )
 
@@ -222,9 +222,9 @@ async def txt_handler(bot: Client, m: Message):
     raw_text3 = input3.text
     await input3.delete(True)
     # Default credit message
-    credit = "️@Nikhil_saini_khe 🕊️⁪⁬⁮⁮⁮"
+    credit = "️ MANU🤡 🕊️⁪⁬⁮⁮⁮"
     if raw_text3 == '1':
-        CR = '@Nikhil_saini_khe 🕊️'
+        CR = 'MANU🤡 🕊️'
     elif raw_text3:
         CR = raw_text3
     else:
@@ -405,7 +405,7 @@ async def txt_handler(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("🦅Done Baby💞")
+    await m.reply_text("🦅 DONE BOSS💞")
 
 
 
