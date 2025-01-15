@@ -1,6 +1,8 @@
 import time
 import math
 import os
+import tkinter as tk
+import itertools
 from pyrogram.errors import FloodWait
 
 class Timer:
@@ -92,5 +94,28 @@ async def progress_bar(current, total, reply, start):
             
             try:
                 await reply.edit(f'`\n ╭──⌯════𝐁𝐨𝐭 𝐒𝐭𝐚𝐭𝐢𝐜𝐬═════⌯──╮ \n├⚡ {progress_bar} |﹝{perc}﹞ \n├🚀 Speed ➤ {sp} \n├📟 Processed ➤ {cur}\n├🧲 Size - ETA ➤ {tot} - {eta} \n╰─═══ ✨🦋PELU HARSHU🦋✨ ═══─╯`\n') 
+                # Create a list of emojis to animate
+emojis = ["😀", "😂", "😍", "😎", "😴", "🤔", "🎉", "✨", "🔥"]
+
+def animate_emoji():
+    for emoji in itertools.cycle(emojis):  # Loop through emojis infinitely
+        label.config(text=emoji)  # Update emoji on label
+        root.update()  # Refresh the GUI
+        time.sleep(0.5)  # Add a delay for animation
+
+# Set up the tkinter GUI
+root = tk.Tk()
+root.title("Live Emoji Animation")
+root.geometry("200x200")
+
+# Create a label to display the emoji
+label = tk.Label(root, text="", font=("Arial", 50))
+label.pack(expand=True)
+
+# Start the animation in a new thread
+root.after(0, animate_emoji)
+
+# Run the tkinter main loop
+root.mainloop()
             except FloodWait as e:
                 time.sleep(e.x)
