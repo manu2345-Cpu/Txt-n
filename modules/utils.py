@@ -94,7 +94,9 @@ async def progress_bar(current, total, reply, start):
             
             try:
                 await reply.edit(f'`\n ╭──⌯════𝐁𝐨𝐭 𝐒𝐭𝐚𝐭𝐢𝐜𝐬═════⌯──╮ \n├⚡ {progress_bar} |﹝{perc}﹞ \n├🚀 Speed ➤ {sp} \n├📟 Processed ➤ {cur}\n├🧲 Size - ETA ➤ {tot} - {eta} \n╰─═══ ✨🦋PELU HARSHU🦋✨ ═══─╯`\n') 
-                # Create a list of emojis to animate
+            except FloodWait as e:
+                time.sleep(e.x)
+
 emojis = ["😀", "😂", "😍", "😎", "😴", "🤔", "🎉", "✨", "🔥"]
 
 def animate_emoji():
@@ -117,5 +119,5 @@ root.after(0, animate_emoji)
 
 # Run the tkinter main loop
 root.mainloop()
-            except FloodWait as e:
-                time.sleep(e.x)
+
+        
