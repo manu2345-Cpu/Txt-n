@@ -1,3 +1,34 @@
+
+import time
+import math
+import os
+import tkinter as tk
+import itertools
+from datetime import timedelta
+from pyrogram.errors import FloodWait
+
+emojis = ["😀", "😂", "😍", "😎", "😴", "🤔", "🎉", "✨", "🔥"]
+
+def animate_emoji(index=0):
+    label.config(text=emojis[index])  # Update emoji
+    next_index = (index + 1) % len(emojis)  # Get next index cyclically
+    root.after(500, animate_emoji, next_index)  # Call the function again after 500ms
+
+root = tk.Tk()
+root.title("Live Emoji Animation")
+root.geometry("200x200")
+
+label = tk.Label(root, text="", font=("Arial", 50))
+label.pack(expand=True)
+
+root.after(0, animate_emoji)
+root.mainloop()
+
+
+
+
+
+
 import time
 import math
 import os
