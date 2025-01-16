@@ -92,7 +92,7 @@ async def main():
         print(f"Web server started on port {PORT}")
 
     # Start the bot
-    await start_bot()
+
 
     # Keep the program running
     try:
