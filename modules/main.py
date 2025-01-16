@@ -95,7 +95,7 @@ async def main():
 
 
     # Keep the program running
- try:
+    try:
         while True:
             await asyncio.sleep(3600)  # Run forever, or until interrupted
     except (KeyboardInterrupt, SystemExit):
