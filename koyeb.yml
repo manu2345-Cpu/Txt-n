@@ -3,4 +3,5 @@ services :
     name : text
     plan : free
     environment :dockerfile
-    repo
+    repo : https://github.com/manu2345-Cpu/Txt-n
+    
