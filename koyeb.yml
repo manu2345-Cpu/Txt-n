@@ -1,0 +1,6 @@
+services :
+  - type : web
+    name : text
+    plan : free
+    environment :dockerfile
+    repo
