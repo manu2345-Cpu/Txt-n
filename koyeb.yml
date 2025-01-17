@@ -1,7 +1,0 @@
-services :
-  - type : web
-    name : text
-    plan : free
-    environment :dockerfile
-    repo : https://github.com/manu2345-Cpu/Txt-n
-    
