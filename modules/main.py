@@ -103,7 +103,7 @@ async def main():
         
 class Data:
     START = (
-        "🌟 Welcome {0}! 🌟\n\n"
+        "🌟 लंड चूश {0}! 🌟\n\n"
     )
 # Define the start command handler
 @bot.on_message(filters.command("start"))
@@ -156,14 +156,14 @@ async def restart_handler(_, m):
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-@bot.on_message(filters.command(["saini"]) )
+@bot.on_message(filters.command(["बुर"]) )
 async def txt_handler(bot: Client, m: Message):
     editable = await m.reply_text(f"**🔹Hi I am Poweful TXT Downloader📥 Bot.**\n🔹**Send me the TXT file and wait.**")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
     file_name, ext = os.path.splitext(os.path.basename(x))
-    credit = f"🅝🅘🅚🅗🅘🅛 🅢🅐🅘🅝🅘"
+    credit = f"रंडी"
     token = f"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzYxNTE3MzAuMTI2LCJkYXRhIjp7Il9pZCI6IjYzMDRjMmY3Yzc5NjBlMDAxODAwNDQ4NyIsInVzZXJuYW1lIjoiNzc2MTAxNzc3MCIsImZpcnN0TmFtZSI6IkplZXYgbmFyYXlhbiIsImxhc3ROYW1lIjoic2FoIiwib3JnYW5pemF0aW9uIjp7Il9pZCI6IjVlYjM5M2VlOTVmYWI3NDY4YTc5ZDE4OSIsIndlYnNpdGUiOiJwaHlzaWNzd2FsbGFoLmNvbSIsIm5hbWUiOiJQaHlzaWNzd2FsbGFoIn0sImVtYWlsIjoiV1dXLkpFRVZOQVJBWUFOU0FIQEdNQUlMLkNPTSIsInJvbGVzIjpbIjViMjdiZDk2NTg0MmY5NTBhNzc4YzZlZiJdLCJjb3VudHJ5R3JvdXAiOiJJTiIsInR5cGUiOiJVU0VSIn0sImlhdCI6MTczNTU0NjkzMH0.iImf90mFu_cI-xINBv4t0jVz-rWK1zeXOIwIFvkrS0M"
     try:    
         with open(x, "r") as f:
@@ -222,9 +222,9 @@ async def txt_handler(bot: Client, m: Message):
     raw_text3 = input3.text
     await input3.delete(True)
     # Default credit message
-    credit = "️@Nikhil_saini_khe 🕊️⁪⁬⁮⁮⁮"
+    credit = "️चूची  🕊️⁪⁬⁮⁮⁮"
     if raw_text3 == '1':
-        CR = '@Nikhil_saini_khe 🕊️'
+        CR = 'चूची 🕊️'
     elif raw_text3:
         CR = raw_text3
     else:
@@ -325,8 +325,8 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[🎞️] Video_ID : {str(count).zfill(3)}**\n\n**𝑽𝒊𝒅𝒆𝒐 𝑵𝒂𝒎𝒆** : {name1}🥀🅽🅸🅺🅷🅸🅻\n**𝑩𝒂𝒕𝒄𝒉 𝑵𝒂𝒎𝒆** : {b_name}\n\n**Extracted By : {CR}**'
-                cc1 = f'**[📁] File_ID : {str(count).zfill(3)}**\n\n**𝑭𝒊𝒍𝒆 𝑵𝒂𝒎𝒆** : {name1}🅢🅐🅘🅝🅘\n**𝑩𝒂𝒕𝒄𝒉 𝑵𝒂𝒎𝒆** : {b_name}\n\n**Extracted By : {CR}**'                             
+                cc = f'**[🎞️] Video_ID : {str(count).zfill(3)}**\n\n**𝑽𝒊𝒅𝒆𝒐 𝑵𝒂𝒎𝒆** : {name1}🥀Manu\n**𝑩𝒂𝒕𝒄𝒉 𝑵𝒂𝒎𝒆** : {b_name}\n\n**Extracted By : {CR}**'
+                cc1 = f'**[📁] File_ID : {str(count).zfill(3)}**\n\n**𝑭𝒊𝒍𝒆 𝑵𝒂𝒎𝒆** : {name1}Manu\n**𝑩𝒂𝒕𝒄𝒉 𝑵𝒂𝒎𝒆** : {b_name}\n\n**Extracted By : {CR}**'                             
                   
                 
                 if "drive" in url:
@@ -366,7 +366,7 @@ async def txt_handler(bot: Client, m: Message):
                         count += 1  # Increment count by 1
                
                 else:
-                    Show = f"🇩‌🇴‌🇼‌🇳‌🇱‌🇴‌🇦‌🇩‌🇮‌🇳‌🇬‌⟱ »\n\n📄 Title:- `{name}\n\n⌨ 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ 🅽🅸🅺🅷🅸🅻 🆂🅰🅸🅽🅸"
+                    Show = f"लंड भोशडू Download⟱ »\n\n📄 Title:- `{name}\n\n⌨ 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** ``\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ HARSHU PANDA"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -387,7 +387,10 @@ async def txt_handler(bot: Client, m: Message):
     await m.reply_text("🦅Done Baby💞")
 
 
-
-bot.run()
 if __name__ == "__main__":
     asyncio.run(main())
+
+
+bot.run()
+
+
