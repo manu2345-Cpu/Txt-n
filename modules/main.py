@@ -1,4 +1,4 @@
-import os
+
 import re
 import sys
 import json
@@ -52,54 +52,6 @@ async def start_bot():
     await bot.start()
     print("Bot is up and running")
 
-async def stop_bot():
-    await bot.stop()
-
-async def main():
-    if WEBHOOK:True
-        # Start the web server
-        app_runner = web.AppRunner(await web_server())
-        await app_runner.setup()
-        site = web.TCPSite(app_runner, "0.0.0.0", PORT)
-        await site.start()
-        print(f"Web server started on port {PORT}")
-
-    # Start the bot
-    await start_bot()
-
-    # Keep the program running
-    try:
-        while True:
-            await bot.polling()  # Run forever, or until interrupted
-    except (KeyboardInterrupt, SystemExit):
-        await stop_bot()
-    
-
-async def start_bot():
-    await bot.start()
-    print("Bot is up and running")
-
-async def stop_bot():
-    await bot.stop()
-
-async def main():
-    if WEBHOOK: True
-        # Start the web server
-        app_runner = web.AppRunner(await web_server())
-        await app_runner.setup()
-        site = web.TCPSite(app_runner, "0.0.0.0", PORT)
-        await site.start()
-        print(f"Web server started on port {PORT}")
-
-    # Start the bot
-    await start_bot()
-
-    # Keep the program running
-    try:
-        while True:
-            await asyncio.sleep(3600)  # Run forever, or until interrupted
-    except (KeyboardInterrupt, SystemExit):
-        await stop_bot()
         
 class Data:
     START = (
