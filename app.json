@@ -7,18 +7,18 @@
         "video-extract",
         "pyrogram"
     ],
-    "repository": "https://github.com/nikhilsainiop/Txt-n",
-    "success_url": "https://t.me/+taZCy5OkoMUwNzI9",
+    "repository": "https://github.com/manu2345-Cpu/Txt-n",
+    "success_url": "0",
     "stack": "container",
     "env": {
         "API_ID": {
             "description": "Enter Your Api Id",
-            "value": "28094744",
+            "value": "28477603",
             "required": true
         },
         "API_HASH": {
             "description": "Enter Your Api Hash",
-            "value": "a75af4285edc7747c57bb19147ca0b9b",
+            "value": "2078f7f44d78c22d2cb337e8638697b4",
             "required": true
         },
         "BOT_TOKEN": {
@@ -31,10 +31,7 @@
             "value": "@Nklurluploader_bot",
             "required": true
         },
-        "MONGO_URI": {
-            "description": "Enter your MongoDB connection string",
-            "value": "",
-            "required": true
+        
         }
     },
     "addons": [],
