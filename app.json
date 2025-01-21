@@ -8,7 +8,7 @@
         "pyrogram"
     ],
     "repository": "https://github.com/manu2345-Cpu/Txt-n",
-    "success_url": "https://github.com/Createworld04/xyzz",
+    "success_url": "",
     "stack": "container",
     "env": {
         "API_ID": {
